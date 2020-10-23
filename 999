@@ -1,0 +1,22 @@
+if (isMobile()) {
+                this.$router.push({ path: "/mobile/member/mine" });
+              } else {
+                this.$router.push({ path: "/member" });
+              }
+
+
+
+              import { isMobile } from "@/utils/tools.js";
+
+
+
+
+
+              rightBtnVisible: {type: Boolean, default: true},
+
+              <div class="click-btn" v-if="rightBtnVisible" @click="onClickBtn">{{isLast ? $t('actionTitles.finish') : $t('actionTitles.next')}}</div>
+      <div style="width: 60px;" v-else></div>
+
+
+
+                                      RNFS.unlink(result.coverUri.substring(0));
